@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🇫🇷 My French Learning Vault – By Sivaneswaran R.</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fdf6ec, #e6f7ff);
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 30px;
+    }
+    h2 {
+      color: #1e90ff;
+      border-bottom: 2px solid #95a5a6;
+      padding-bottom: 10px;
+      margin-top: 50px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 17px;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #dff9fb;
+    }
+    .audio-buttons button {
+      margin: 6px;
+      padding: 8px 14px;
+      border: none;
+      background-color: #1e90ff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .audio-buttons button:hover {
+      background-color: #1565c0;
+    }
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      width: 300px;
+    }
+    button.quiz-btn {
+      padding: 8px 14px;
+      font-size: 16px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    button.quiz-btn:hover {
+      background-color: #219150;
+    }
+    #feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
+    a {
+      color: #ffd54f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🇫🇷 My French Learning Vault</h1>
+    <p>A space to store my grammar notes, vocab tricks, pronunciation, and quiz practice</p>
+  </header>
+
+  <section>
+    <h2>📘 Why I Love French</h2>
+    <p>French is logical, poetic, and beautifully expressive. Learning it helps me think in new ways and expand my creativity—even in sci-fi storytelling! 🇫🇷🛸</p>
+  </section>
+
+  <section>
+    <h2>🔤 Favorite Vocabulary + Pronunciation</h2>
+    <table>
+      <tr>
+        <th>Français</th>
+        <th>English</th>
+        <th>🔊 Pronunciation</th>
+      </tr>
+      <tr>
+        <td>le ciel</td>
+        <td>the sky</td>
+        <td>
+          <audio id="audio1" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Fr-ciel.ogg"></audio>
+          <button onclick="document.getElementById('audio1').play()">🔊</button>
+        </td>
+      </tr>
+      <tr>
+        <td>rêver</td>
+        <td>to dream</td>
+        <td>
+          <audio id="audio2" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Fr-r%C3%AAver.ogg"></audio>
+          <button onclick="document.getElementById('audio2').play()">🔊</button>
+        </td>
+      </tr>
+      <tr>
+        <td>explorer</td>
+        <td>to explore</td>
+        <td>
+          <audio id="audio3" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Fr-explorer.ogg"></audio>
+          <button onclick="document.getElementById('audio3').play()">🔊</button>
+        </td>
+      </tr>
+      <tr>
+        <td>la lumière</td>
+        <td>the light</td>
+        <td>(Coming soon)</td>
+      </tr>
+      <tr>
+        <td>la fusée</td>
+        <td>rocket</td>
+        <td>(Coming soon)</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>📒 Grammar Rules</h2>
+    <ul>
+      <li>Gender matters: <strong>le</strong> (masculine), <strong>la</strong> (feminine)</li>
+      <li>Adjectives agree with nouns → un garçon intelligent / une fille intelligente</li>
+      <li>Negation: <code>ne + verb + pas</code> → Je ne parle pas</li>
+      <li>Asking questions: <em>Tu aimes le chocolat ?</em> / <em>Aimes-tu le chocolat ?</em></li>
+      <li>Subject + conjugated verb is essential in every French sentence!</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔁 Verb Conjugation Table – Présent Tense</h2>
+    <table>
+      <tr>
+        <th>Pronoun</th>
+        <th>Aimer</th>
+        <th>Être</th>
+        <th>Avoir</th>
+        <th>Aller</th>
+      </tr>
+      <tr>
+        <td>Je</td>
+        <td>j’aime</td>
+        <td>je suis</td>
+        <td>j’ai</td>
+        <td>je vais</td>
+      </tr>
+      <tr>
+        <td>Tu</td>
+        <td>aimes</td>
+        <td>es</td>
+        <td>as</td>
+        <td>vas</td>
+      </tr>
+      <tr>
+        <td>Il/Elle</td>
+        <td>aime</td>
+        <td>est</td>
+        <td>a</td>
+        <td>va</td>
+      </tr>
+      <tr>
+        <td>Nous</td>
+        <td>aimons</td>
+        <td>sommes</td>
+        <td>avons</td>
+        <td>allons</td>
+      </tr>
+      <tr>
+        <td>Vous</td>
+        <td>aimez</td>
+        <td>êtes</td>
+        <td>avez</td>
+        <td>allez</td>
+      </tr>
+      <tr>
+        <td>Ils/Elles</td>
+        <td>aiment</td>
+        <td>sont</td>
+        <td>ont</td>
+        <td>vont</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>🧪 Vocabulary Quiz</h2>
+    <p>What does <strong>"la fusée"</strong> mean?</p>
+    <form onsubmit="checkAnswer(); return false;">
+      <input type="text" id="quizAnswer" placeholder="Type your answer in English..." />
+      <button type="submit" class="quiz-btn">Check</button>
+    </form>
+    <p id="feedback"></p>
+  </section>
+
+  <script>
+    function checkAnswer() {
+      let input = document.getElementById("quizAnswer").value.trim().toLowerCase();
+      let feedback = document.getElementById("feedback");
+      if (input === "rocket") {
+        feedback.textContent = "✅ Correct! La fusée means rocket 🚀";
+        feedback.style.color = "green";
+      } else {
+        feedback.textContent = "❌ Try again. Think about space!";
+        feedback.style.color = "red";
+      }
+    }
+  </script>
+
+  <footer>
+    <p>Merci beaucoup et à bientôt, professeur Sivaneswaran 👨‍🏫 
+    <br/><a href="index.html">← Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
